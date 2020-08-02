@@ -1,0 +1,26 @@
+/* Global Layout Set-up */
+* { 
+    box-sizing: border-box;
+  }
+
+html {
+  background-color: black;
+}
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: chartreuse;
+    display: block;
+  }
+
+
+h1 {
+    font-size: larger;
+  }
+  
+  
+.game {
+    border: chartreuse solid 3px;
+    
+}
