@@ -38,18 +38,18 @@ const RIGHT_KEY = 39;
 const UP_KEY = 38;
 const DOWN_KEY = 40;
 
-// These constants store the values of arrow keys. They are used for better readability.
+// constants store the values of arrow keys... they are used for better readability.
 
 
 var x = new Array(ALL_DOTS);
 var y = new Array(ALL_DOTS);
 
-// These two arrays store the x and y coordinates of all joints of a snake.
+// arrays store the x and y coordinates of all joints of a snake.
 
 
 
 
-// The init() function gets the reference to the canvas object and its context. The loadImages(), createSnake(), and locateApple() functions are called to perform specific tasks. The setTimeout() starts the animation.
+// init() function gets the reference to the canvas object and its context. The loadImages(), createSnake(), and locateApple() functions are called to perform specific tasks. The setTimeout() starts the animation.
 function init() {
     
     canvas = document.getElementById('myCanvas');
@@ -59,6 +59,7 @@ function init() {
     createSnake();
     locateApple();
     setTimeout("gameCycle()", DELAY);
+    // initializes the game by calling in all the functions 
 }    
 
 function loadImages() {
@@ -92,14 +93,16 @@ function checkApple() {
 
         dots++;
         locateApple();
+        
     }
-    // if the head collides with an apple, adds a dot and randomly places another apple
+    // if the head collides with an apple, adds a dot and calls the locateApple function
 }    
 
 function doDrawing() {
     
     ctx.clearRect(0, 0, C_WIDTH, C_HEIGHT);
-    
+    // C_HEIGHT and C_WIDTH constants store the size of the canvas.
+
     if (inGame) {
 
         ctx.drawImage(apple, apple_x, apple_y);
@@ -125,7 +128,8 @@ function gameOver() {
     ctx.textAlign = 'center'; 
     ctx.font = 'normal bold 30px courier new';
     
-    ctx.fillText('Game over', C_WIDTH/2, C_HEIGHT/2);
+    ctx.fillText('Game Over', C_WIDTH/2, C_HEIGHT/2);
+    
 
     // game over text
 }
@@ -200,6 +204,7 @@ function locateApple() {
 
     r = Math.floor(Math.random() * MAX_RAND);
     apple_y = r * DOT_SIZE;
+    // randomly places a new apple
 }    
 
 function gameCycle() {

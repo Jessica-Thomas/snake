@@ -8,10 +8,9 @@ html {
 }
 
 
-body {
+h1 {
     font-family: 'Courier New', Courier, monospace;
     color: chartreuse;
-    display: block;
   }
 
 
@@ -20,7 +19,7 @@ h1 {
   }
   
   
-.game {
+/* #game {
     border: chartreuse solid 3px;
     
-}
+} */

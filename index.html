@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>It's a snaaaaake</title>    
-<style>
-    canvas {background: black;}
-</style>
-<script src="js/app.js"></script>
+ <link href="css/styles.css" rel="stylesheet"> 
+  <title>It's a snaaaaake</title>    
+    <style>
+        canvas {background: black;}
+        body {background: black;}
+    </style>
+  <script src="js/app.js"></script>
 </head>
+
+<body>
+  <h1>A Noob Devs Take on Snake</h1>
+</body>
     
 <body onload="init();">
-  <div class="game" style="border-color: chartreuse;">
-     <canvas id="myCanvas" width="300" height="300">
+  <div id="game">
+     <canvas id="myCanvas" width="300" height="300" style="border:1px solid chartreuse;">
     </canvas>
   </div>
    
