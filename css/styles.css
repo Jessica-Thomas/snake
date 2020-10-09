@@ -7,19 +7,20 @@ html {
   background-color: black;
 }
 
-
-h1 {
+h1, h2, ol {
     font-family: 'Courier New', Courier, monospace;
     color: chartreuse;
   }
 
-
-h1 {
-    font-size: larger;
+  div {
+    float: left;
   }
   
+  button {
+    margin-top: 10px;
+  }
   
-/* #game {
-    border: chartreuse solid 3px;
-    
-} */
+  section {
+    float: right;
+  }
+  
